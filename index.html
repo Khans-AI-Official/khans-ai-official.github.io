@@ -340,6 +340,22 @@ footer nav a:hover{color:var(--text)}
   .track{animation:none}
   .rv-on .rv:not(.in){opacity:1; transform:none}
 }
+
+/* FormPilot product section */
+.fp-grid{display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:clamp(20px,3vw,40px); align-items:start}
+@media (max-width:900px){.fp-grid{grid-template-columns:1fr}}
+.fp-video{position:relative; aspect-ratio:16/9; border-radius:18px; overflow:hidden; border:1px solid var(--line); background:#05080C; box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.fp-video iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
+.fp-mark{display:flex; align-items:center; gap:12px; margin-bottom:16px}
+.fp-mark b{font-size:26px; letter-spacing:-.03em}
+.fp-steps{list-style:none; padding:0; margin:18px 0 0; display:grid; gap:10px}
+.fp-steps li{display:flex; gap:12px; align-items:baseline; color:var(--text-2); font-size:16px}
+.fp-steps li span{font:500 12px var(--mono); color:var(--beam-2); min-width:22px}
+.fp-price{display:flex; flex-wrap:wrap; gap:8px; margin:22px 0}
+.fp-price div{padding:12px 16px; border-radius:14px; border:1px solid var(--line); background:rgba(255,255,255,.04)}
+.fp-price b{display:block; font-size:22px; letter-spacing:-.03em}
+.fp-price small{color:var(--text-3); font-size:12.5px}
+.fp-cta{display:flex; flex-wrap:wrap; gap:10px}
 </style>
 
 <nav class="nav" aria-label="Main">
@@ -353,7 +369,7 @@ footer nav a:hover{color:var(--text)}
     </a>
     <button type="button" class="menu-btn glass" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><i></i><i></i></button>
     <div class="pill glass" id="menu">
-      <a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#team">Team</a><a class="m-only" href="#contact">Contact</a>
+      <a href="#work">Work</a><a href="#formpilot">FormPilot</a><a href="#services">Services</a><a href="#process">Process</a><a href="#team">Team</a><a class="m-only" href="#contact">Contact</a>
     </div>
     <div class="nav-r glass">
       <a class="gh" href="https://github.com/Khans-AI-Official" target="_blank" rel="noopener">GitHub</a>
@@ -554,6 +570,47 @@ footer nav a:hover{color:var(--text)}
           </div>
         </article>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FORMPILOT ================= -->
+  <section class="sec panel p-work" id="formpilot">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <span class="eyebrow">Product · FormPilot</span>
+          <h2>Hundreds of web forms. <span class="grad">Zero typing.</span></h2>
+        </div>
+        <p>FormPilot fills Google Forms and any website form from your Excel file, row by row. No external AI services, and your data stays on your own PC.</p>
+      </div>
+      <div class="fp-grid">
+        <div class="fp-video rv">
+          <iframe src="https://www.youtube-nocookie.com/embed/x2Dbb3lCoCg?rel=0" title="FormPilot by Khan's AI: product video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="rv">
+          <div class="fp-mark">
+            <svg viewBox="0 0 30 30" width="44" height="44" aria-hidden="true"><defs><radialGradient id="fpglowS" cx="17.2" cy="15.1" r="4.6" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF5A68"/><stop offset=".35" stop-color="#FF3347"/><stop offset=".75" stop-color="#FF3347" stop-opacity=".35"/><stop offset="1" stop-color="#FF3347" stop-opacity="0"/></radialGradient></defs><rect x="1" y="1" width="28" height="28" rx="8" fill="#fff"/><path d="M7.4 22.5v-15h4.9M7.4 15h4M17.2 22.5v-15h2.6a3.8 3.8 0 0 1 0 7.6h-2.6" stroke="#0B0F14" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M7.4 22.5v-15h4.9M7.4 15h4M17.2 22.5v-15h2.6a3.8 3.8 0 0 1 0 7.6h-2.6" stroke="url(#fpglowS)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            <div><b>FormPilot</b><div class="eyebrow" style="margin-top:4px">by Khan's AI</div></div>
+            <span class="chip live" style="margin-left:auto; flex:none; align-self:flex-start">Available</span>
+          </div>
+          <ol class="fp-steps">
+            <li><span>01</span>Drop in your Excel file. Any columns, in any order.</li>
+            <li><span>02</span>Paste the link of a Google Form or any website form.</li>
+            <li><span>03</span>Columns are matched to the form fields automatically.</li>
+            <li><span>04</span>See how long it will take, click Start, and get a full report.</li>
+          </ol>
+          <div class="fp-price">
+            <div><b>Rs 1</b><small>per form submitted</small></div>
+            <div><b>Rs 4,500</b><small>for 5,000 forms</small></div>
+            <div><b>5 free</b><small>forms to try</small></div>
+          </div>
+          <div class="fp-cta">
+            <a class="btn btn-light" href="https://wa.me/923142577070?text=Hi%2C%20I%20want%20to%20try%20FormPilot" target="_blank" rel="noopener">Try 5 forms free <span class="arr">→</span></a>
+            <a class="btn btn-line" href="https://youtu.be/x2Dbb3lCoCg" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+          <p style="margin-top:14px; color:var(--text-3); font-size:13.5px">Pay with Easypaisa or JazzCash. You pay only for forms that are submitted successfully.</p>
+        </div>
       </div>
     </div>
   </section>
